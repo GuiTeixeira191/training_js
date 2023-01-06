@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM pt1</title>
+</head>
+<body>
+    <h1>Comentários Rede Social</h1>
+
+    <p id="nome-usuario"> Post de <b>Guilherme Teixeira</b> @GuiTeixeira - 10min <br/></p>
+    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado</p>
+
+    <div class="comentarios">
+        <h2>Comentários: </h2>
+
+        <input type="text" placeholder="Insira seu comentário" name="novo-comentario"/>
+        <button onclick='adicionarComentario()'>Adicionar Comentário</button>
+
+        <br/>
+
+        <div id="novos-comentarios"></div>
+    </div>
+
+    <script type="text/javascript" src="./manipulandodom.js"></script>
+</body>
+</html>
