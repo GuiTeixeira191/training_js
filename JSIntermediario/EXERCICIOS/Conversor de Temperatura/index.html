@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter Celcius em Fahrenheight</title>
-    
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
 <body>
 
     <h1>Conversor de Temperatura</h1>
     
     <div>
-        <p>Insira a temperatura em Celcius</p>
-        <input type="number" id="celciusinput" placeholder="Insira a temperatura em Celcius"/>
+        <h2>Insira a temperatura em Celcius</h2>
+        <input type="text" id="celciusinput" value="" size="25" placeholder="Insira a temperatura em °C"/>
 
         <button onclick="converterCelcius()">CONVERTER</button>
 
@@ -22,9 +22,9 @@
         <p id="resultC"></p>
     </div>
 
-        <div>
-        <p>Insira a temperatura em Fahrenheight</p>
-        <input type="number" id="fahrenheightinput" placeholder="Insira a temperatura em Fahrenheight"/>
+    <div>
+        <h2>Insira a temperatura em Fahrenheight</h2>
+        <input type="text" id="fahrenheightinput"  value="" size="25" placeholder="Insira a temperatura em °F"/>
 
         <button onclick="converterFahrenheight()">CONVERTER</button>
 
