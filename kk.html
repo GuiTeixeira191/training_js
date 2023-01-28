@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var paragraphs = [];
+      function addParagraph() {
+        // get input value
+        var inputValue = document.getElementById("input").value;
+
+        // create new paragraph element
+        var newParagraph = document.createElement("p");
+
+        // get the div element
+        var div = document.getElementById("targetDiv");
+
+        // set input value as the new paragraph's text
+        newParagraph.innerText = inputValue;
+
+        // store the new paragraph in the array
+        paragraphs.push(newParagraph);
+
+        // add new paragraph to the div
+        div.appendChild(newParagraph);
+
+        // clear the input field
+        document.getElementById("input").value = "";
+      }
+      function removeLastParagraph() {
+        var div = document.getElementById("targetDiv");
+        if (paragraphs.length > 0) {
+          var lastParagraph = paragraphs.pop();
+          div.removeChild(lastParagraph);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <button onclick="addParagraph()">Add Paragraph</button>
+    <button onclick="removeLastParagraph()">Remove Last Paragraph</button>
+    <div id="targetDiv"></div>
+  </body>
+</html>

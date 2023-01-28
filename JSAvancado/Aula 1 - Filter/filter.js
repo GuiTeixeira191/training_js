@@ -16,8 +16,6 @@ for (let i = 0; i < pessoas.length; i++){
 
 //NOVO MÉTODO, COM FILTER, MAIS FACIL E MAIS USADO
 
-const pessoasCom33Anos = pessoas.filter((pessoa) =>{
-    return pessoa.idade === 33
-} )
+const pessoasCom33Anos = pessoas.filter((pessoa) => pessoa.idade === 33 )
 
 console.log(pessoasCom33Anos)
