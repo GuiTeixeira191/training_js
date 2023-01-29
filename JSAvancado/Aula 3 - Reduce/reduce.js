@@ -4,7 +4,7 @@ const ordens = [
     {cliente: 'Rafael', tipo: 'venda', quantidade: 21, ativo: 'KNRI11'}
 ]
 
-
+//METODO ANTIGO
 
 // let quantidadeOrdens = 0
 // for (let i = 0; i < ordens.length; i++) {
@@ -14,8 +14,9 @@ const ordens = [
 // console.log(quantidadeOrdens) 
 
 
-let quantidadeOrdens = ordens.reduce((somaOrdens, ordem) => {
-    return somaOrdens + ordem.quantidade
-}, 0)
+//METODO NOVO COM REDUCE
+
+let quantidadeOrdens = ordens.reduce((somaOrdens, ordem) => somaOrdens + ordem.quantidade, 0 )
 
 console.log(quantidadeOrdens) 
+
